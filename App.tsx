@@ -10,7 +10,6 @@ import AIView from './views/AIView';
 import Leaderboard from './views/Leaderboard';
 import TeacherPanel from './views/TeacherPanel';
 import ProfileView from './views/ProfileView';
-import Tutorial from './components/Tutorial';
 import { User, Language } from './types';
 
 const INITIAL_USER: User = {
@@ -50,8 +49,6 @@ const App: React.FC = () => {
   return (
     <HashRouter>
       <div className="min-h-screen flex flex-col">
-        <Tutorial language={language} />
-        
         <Navbar 
           user={user} 
           language={language} 
